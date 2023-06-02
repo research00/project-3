@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class Project_3 {
-    static int dataEntryNumber = 50000;
+    static int dataEntryNumber = 90000;
     static ArrayList<String> Al = new ArrayList<>();
     static LinkedList<String> Ll = new LinkedList<>();
     static Random rand = new Random();
@@ -62,13 +62,13 @@ public class Project_3 {
             int randIndex = rand.nextInt(Al.size());
 
             startTime = System.currentTimeMillis();
-            Al.get(randIndex);
+            Al.indexOf(String.valueOf(randIndex));
             endTime = System.currentTimeMillis();
             timeGetArrayList += endTime-startTime;
             bar.setTimeSearchAL(timeGetArrayList);
 
             startTime = System.currentTimeMillis();
-            Ll.get(randIndex);
+            Ll.indexOf(String.valueOf(randIndex));
             endTime = System.currentTimeMillis();
             timeGetLinkedList += endTime-startTime;
             bar.setTimeSearchLL(timeGetLinkedList);
