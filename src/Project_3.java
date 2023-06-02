@@ -53,28 +53,28 @@ public class Project_3 {
         printResults("Add", timeAddArrayList, timeAddLinkedList);
     }
 
-    public static void search() {
-        double timeGetArrayList = 0.0;
-        double timeGetLinkedList = 0.0;
-        double startTime, endTime;
-
-        for (int i = 0; i < Al.size(); i++) {
-            int randIndex = rand.nextInt(Al.size());
-
-            startTime = System.currentTimeMillis();
-            Al.indexOf(String.valueOf(randIndex));
-            endTime = System.currentTimeMillis();
-            timeGetArrayList += endTime-startTime;
-            bar.setTimeSearchAL(timeGetArrayList);
-
-            startTime = System.currentTimeMillis();
-            Ll.indexOf(String.valueOf(randIndex));
-            endTime = System.currentTimeMillis();
-            timeGetLinkedList += endTime-startTime;
-            bar.setTimeSearchLL(timeGetLinkedList);
-        }
-        printResults("Search", timeGetArrayList, timeGetLinkedList);
-    }
+//    public static void search() {
+//        double timeGetArrayList = 0.0;
+//        double timeGetLinkedList = 0.0;
+//        double startTime, endTime;
+//
+//        for (int i = 0; i < Al.size(); i++) {
+//            int randIndex = rand.nextInt(Al.size());
+//
+//            startTime = System.currentTimeMillis();
+//            Al.indexOf(String.valueOf(randIndex));
+//            endTime = System.currentTimeMillis();
+//            timeGetArrayList += endTime-startTime;
+//            bar.setTimeSearchAL(timeGetArrayList);
+//
+//            startTime = System.currentTimeMillis();
+//            Ll.indexOf(String.valueOf(randIndex));
+//            endTime = System.currentTimeMillis();
+//            timeGetLinkedList += endTime-startTime;
+//            bar.setTimeSearchLL(timeGetLinkedList);
+//        }
+//        printResults("Search", timeGetArrayList, timeGetLinkedList);
+//    }
 
     public static void remove() {
         double timeRemoveArrayList = 0.0;
